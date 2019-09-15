@@ -97,6 +97,7 @@
   <ItemGroup>
     <Compile Include="CalculatorSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableExampleSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Calculator.feature" />
@@ -109,6 +110,7 @@
     <None Include="SpecRunTestProfile_2011_09.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="TableExample.feature" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calculator\Calculator.csproj">
