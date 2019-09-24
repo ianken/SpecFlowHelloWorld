@@ -17,8 +17,7 @@ namespace UnitTestProject1
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("TableExample", Description="\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-        "f two numbers", SourceFile="TableExample.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("TableExample", Description="\tSimple table example", SourceFile="TableExample.feature", SourceLine=0)]
     public partial class TableExampleFeature
     {
         
@@ -31,8 +30,7 @@ namespace UnitTestProject1
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TableExample", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TableExample", "\tSimple table example", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -69,12 +67,12 @@ namespace UnitTestProject1
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Add numbers from table", new string[] {
-                "mytag"}, SourceLine=6)]
+                "mytag"}, SourceLine=4)]
         public virtual void AddNumbersFromTable()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add numbers from table", null, new string[] {
                         "mytag"});
-#line 7
+#line 5
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
@@ -87,8 +85,8 @@ this.ScenarioInitialize(scenarioInfo);
             table1.AddRow(new string[] {
                         "23",
                         "10"});
-#line 8
- testRunner.Given("user enters the follwing values", ((string)(null)), table1, "Given ");
+#line 6
+ testRunner.Given("user enters the following values", ((string)(null)), table1, "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "result"});
@@ -96,8 +94,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "25"});
             table2.AddRow(new string[] {
                         "33"});
-#line 12
- testRunner.Then("results should be validted", ((string)(null)), table2, "Then ");
+#line 10
+ testRunner.Then("validate results", ((string)(null)), table2, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

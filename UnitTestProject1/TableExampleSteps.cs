@@ -7,16 +7,15 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestProject1
 {
-
-
     [Binding]
     public class TableExampleSteps
     {
+
         List<int> results = new List<int>();
         IEnumerable<Calculator> cal;
 
-        [Given(@"user enters the follwing values")]
-        public void GivenUserEntersTheFollwingValues(Table table)
+        [Given(@"user enters the following values")]
+        public void GivenUserEntersTheFollowingValues(Table table)
         {
             cal = table.CreateSet<Calculator>();
 
@@ -25,11 +24,10 @@ namespace UnitTestProject1
             {
                 results.Add(c.Add());
             }
-
         }
         
-        [Then(@"results should be validted")]
-        public void ThenResultsShouldBeValidted(Table table)
+        [Then(@"validate results")]
+        public void ThenValidateResults(Table table)
         {
             int index = 0;
 
@@ -46,8 +44,6 @@ namespace UnitTestProject1
                     index++;
                 }
             }
-
-
         }
     }
 }
