@@ -101,6 +101,7 @@
   <ItemGroup>
     <Compile Include="CalculatorSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeleniumSampleSteps.cs" />
     <Compile Include="TableExampleSteps.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +110,7 @@
     <None Include="Default.srprofile" />
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
+    <None Include="SeleniumSample.feature" />
     <None Include="TableExample.feature" />
     <None Include="SpecRunTestProfile.xsd">
       <SubType>Designer</SubType>
